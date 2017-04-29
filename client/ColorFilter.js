@@ -1,4 +1,4 @@
-export default class VideoColorFilter {
+export default class ColorFilter {
     constructor(src,color,img) {
         this.img = img
         this.video = document.createElement('video')
