@@ -1,10 +1,10 @@
-import ColorFilter from './ColorFilter'
-export default class VideoColorFilter {
+class VideoColorFilter {
     constructor(src,color) {
         const img = document.createElement('img')
-        const colorFilter = new ColorFilter(src,color,img)
+        this.colorFilter = new ColorFilter(src,color,img)
+        document.body.appendChild(img)
     }
     createVideoFilter() {
-        colorFilter.renderVideo()
+        this.colorFilter.renderVideo()
     }
 }
